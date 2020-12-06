@@ -12,7 +12,7 @@ def SieveOfEratosthenes(n):
     prime[1] = False
     #Start at p=2, the smallest prime number.
     p = 2
-    #iterate through up to sqrt n
+    #iterate through up to sqrt n.
     for p in range(2, int(mt.sqrt(n))+1):
         
         if prime[p]:
@@ -21,6 +21,7 @@ def SieveOfEratosthenes(n):
                 prime[i] = False
         p+=1
     for p in range(n+1):
+        #print only the remaining prime values.
         if prime[p]:
             print(p)
 
@@ -31,6 +32,7 @@ if __name__=='__main__':
     print("Prime numbers between 1 and", n,":")
     SieveOfEratosthenes(n)
     t1 = time.time()
+    #Provide the time taken for the program to run.
     print("Time taken:", t1-t0)
         
         
