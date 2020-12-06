@@ -25,6 +25,7 @@ def SieveOfEratosthenes(n):
             print(p)
 
 if __name__=='__main__': 
+    #Main run file section.
     n = 100
     t0 = time.time()
     print("Prime numbers between 1 and", n,":")
